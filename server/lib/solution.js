@@ -3,8 +3,8 @@ const fs = require('fs');
 function getMostCommonWord(textFile) {
   let txt = fs.readFileSync(textFile, 'utf8');
 
-  var allWords = txt.split(/\b/);
-  var wordCountList = {};
+  let allWords = txt.split(/\b/); //['line1', 'line2']
+  let wordCountList = {};
 
   allWords.forEach(function(word) {
     if (word !== ' ') {
@@ -15,9 +15,9 @@ function getMostCommonWord(textFile) {
     }
   });
 
-  var maxCountWord = { count: 0 };
-  for (var propName in wordCountList) {
-    var currentWord = wordCountList[propName];
+  let maxCountWord = { count: 0 };
+  for (let propName in wordCountList) {
+    let currentWord = wordCountList[propName];
     if (maxCountWord.count < currentWord.count) {
       maxCountWord = currentWord;
     }
