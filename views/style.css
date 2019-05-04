@@ -1,24 +1,55 @@
 body {
+  background-image: url(' https://images6.alphacoders.com/429/429155.jpg');
+  background-repeat: no-repeat;
+
   text-align: center;
-  background: #485563; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #29323c,
-    #485563
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #29323c,
-    #485563
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: aliceblue;
 }
 
 h1 {
-  color: aliceblue;
+  color: rgb(40, 160, 150);
+  font-weight: bold;
+  padding-bottom: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: rgb(150, 51, 133);
+  text-decoration-line: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  padding-top: 10px;
+  color: rgb(97, 32, 86);
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid #1abc9c;
+  color: #1abc9c;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 18px;
   font-weight: bold;
 }
 
-input {
-  color: aliceblue;
+.upload-btn-wrapper input[type='file'] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+label {
+  padding-bottom: 30px;
+  font-size: 20px;
 }

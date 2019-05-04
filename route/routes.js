@@ -23,7 +23,7 @@ router.route('/').post((req, res) => {
       fs.unlink(`./views/${textFile.name}`, err => {
         if (err) throw err;
         // if no error, file has been deleted successfully
-        console.log('File deleted from temp folder!');
+        console.log('File deleted from view folder!');
       });
     });
   } else {
